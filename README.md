@@ -117,6 +117,10 @@ Puedes importar la colección de endpoints en Postman usando el archivo [`EV2_AP
 Este sistema API RESTful permite gestionar de manera eficiente usuarios, ofertas laborales, antecedentes y postulaciones, facilitando la interacción entre candidatos y reclutadores.  
 Para dudas, mejoras o reportes, contacta a los autores o revisa el repositorio.
 
+## Utilización IA
+
+Para fines explicativos de uso de inteligencia artificial: utilización de Copilot para revisión de errores de código y documentación. 
+
 ## Autores
 
 - Paulina Acuña
