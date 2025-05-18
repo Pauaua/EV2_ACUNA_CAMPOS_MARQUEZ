@@ -8,6 +8,120 @@
 	},
 	"item": [
 		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "Obtener Usuarios",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"titulo\": \"Administración en Vigilia\", \r\n    \"descripcion\": \"Desarrollador base de API para programa de ajuste y desarrollo de sueños personalizados\", \r\n    \"ubicacion\": \"Nube sectorial sur\", \r\n    \"salario\": \"6,596,559\", \r\n    \"tipo_contrato\": \"Indefinido\", \r\n    \"estado\": \"Activo\", \r\n    \"reclutador_id\": 1 \r\n} "
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Juan\",\r\n  \"apellido\": \"Pérez\",\r\n  \"email\": \"juan.perez@correo.cl\",\r\n  \"contraseña\": \"123456\",\r\n  \"rol\": \"Reclutador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Usuario",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Juan\",\r\n  \"apellido\": \"Pérez\",\r\n  \"email\": \"juan.perez@correo.cl\",\r\n  \"contraseña\": \"123456\",\r\n  \"rol\": \"Reclutador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar usuario",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"titulo\": \"Administración en Vigilia\", \r\n    \"descripcion\": \"Desarrollador base de API para programa de ajuste y desarrollo de sueños personalizados\", \r\n    \"ubicacion\": \"Nube sectorial sur\", \r\n    \"salario\": \"6,596,559\", \r\n    \"tipo_contrato\": \"Indefinido\", \r\n    \"estado\": \"Activo\", \r\n    \"reclutador_id\": 1 \r\n} "
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "OfertaLaboral",
 			"item": [
 				{
@@ -37,7 +151,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{ \r\n    \"titulo\": \"Administración en Vigilia\", \r\n    \"descripcion\": \"Desarrollador base de API para programa de ajuste y desarrollo de sueños personalizados\", \r\n    \"ubicacion\": \"Nube sectorial sur\", \r\n    \"salario\": \"6,596,559\", \r\n    \"tipo_contrato\": \"Indefinido\", \r\n    \"estado\": \"Activo\", \r\n    \"reclutador_id\": 1 \r\n} ",
+							"raw": "{ \r\n    \"titulo\": \"Administración Onírica\", \r\n    \"descripcion\": \"Desarrollador base de API para programa de ajuste y desarrollo de sueños personalizados\", \r\n    \"ubicacion\": \"Nube sectorial sur\", \r\n    \"salario\": \"6,596,559\", \r\n    \"tipo_contrato\": \"Indefinido\", \r\n    \"estado\": \"Activo\", \r\n    \"reclutador_id\": 1 \r\n} ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -111,6 +225,35 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Actualizar oferta laboral",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"titulo\": \"Administración en Vigilia\", \r\n    \"descripcion\": \"Desarrollador base de API para programa de ajuste y desarrollo de sueños personalizados\", \r\n    \"ubicacion\": \"Nube sectorial sur\", \r\n    \"salario\": \"6,596,559\", \r\n    \"tipo_contrato\": \"Indefinido\", \r\n    \"estado\": \"Activo\", \r\n    \"reclutador_id\": 1 \r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/ofertaLaboral",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"ofertaLaboral"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -144,7 +287,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "",
+							"raw": "{\r\n  \"candidato_id\": 2,\r\n  \"oferta_laboral_id\": 1,\r\n  \"fecha_postulacion\": \"2024-05-18\",\r\n  \"estado_postulacion\": \"Enviada\",\r\n  \"comentario\": \"Interesado en la oferta\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -173,7 +316,12 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": ""
+							"raw": "{\r\n  \"candidato_id\": 2,\r\n  \"oferta_laboral_id\": 1,\r\n  \"fecha_postulacion\": \"2024-05-18\",\r\n  \"estado_postulacion\": \"Enviada\",\r\n  \"comentario\": \"Interesado en la oferta\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
 						"url": {
 							"raw": "http://localhost:3000/api/postulacion",
@@ -209,110 +357,6 @@
 							"path": [
 								"api",
 								"postulacion"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Usuarios",
-			"item": [
-				{
-					"name": "Obtener Usuarios",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{ \r\n    \"titulo\": \"Administración en Vigilia\", \r\n    \"descripcion\": \"Desarrollador base de API para programa de ajuste y desarrollo de sueños personalizados\", \r\n    \"ubicacion\": \"Nube sectorial sur\", \r\n    \"salario\": \"6,596,559\", \r\n    \"tipo_contrato\": \"Indefinido\", \r\n    \"estado\": \"Activo\", \r\n    \"reclutador_id\": 1 \r\n} "
-						},
-						"url": {
-							"raw": "http://localhost:3000/api/usuarios",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"usuarios"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Crear usuario",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{ \r\n    \"titulo\": \"Administración en Vigilia\", \r\n    \"descripcion\": \"Desarrollador base de API para programa de ajuste y desarrollo de sueños personalizados\", \r\n    \"ubicacion\": \"Nube sectorial sur\", \r\n    \"salario\": \"6,596,559\", \r\n    \"tipo_contrato\": \"Indefinido\", \r\n    \"estado\": \"Activo\", \r\n    \"reclutador_id\": 1 \r\n} "
-						},
-						"url": {
-							"raw": "http://localhost:3000/api/usuarios",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"usuarios"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Actualizar Usuario",
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{ \r\n    \"titulo\": \"Administración en Vigilia\", \r\n    \"descripcion\": \"Desarrollador base de API para programa de ajuste y desarrollo de sueños personalizados\", \r\n    \"ubicacion\": \"Nube sectorial sur\", \r\n    \"salario\": \"6,596,559\", \r\n    \"tipo_contrato\": \"Indefinido\", \r\n    \"estado\": \"Activo\", \r\n    \"reclutador_id\": 1 \r\n} "
-						},
-						"url": {
-							"raw": "http://localhost:3000/api/usuarios",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"usuarios"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Eliminar usuario",
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{ \r\n    \"titulo\": \"Administración en Vigilia\", \r\n    \"descripcion\": \"Desarrollador base de API para programa de ajuste y desarrollo de sueños personalizados\", \r\n    \"ubicacion\": \"Nube sectorial sur\", \r\n    \"salario\": \"6,596,559\", \r\n    \"tipo_contrato\": \"Indefinido\", \r\n    \"estado\": \"Activo\", \r\n    \"reclutador_id\": 1 \r\n} "
-						},
-						"url": {
-							"raw": "http://localhost:3000/api/usuarios",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"usuarios"
 							]
 						}
 					},
@@ -357,7 +401,12 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{ \r\n    \"titulo\": \"Administración en Vigilia\", \r\n    \"descripcion\": \"Desarrollador base de API para programa de ajuste y desarrollo de sueños personalizados\", \r\n    \"ubicacion\": \"Nube sectorial sur\", \r\n    \"salario\": \"6,596,559\", \r\n    \"tipo_contrato\": \"Indefinido\", \r\n    \"estado\": \"Activo\", \r\n    \"reclutador_id\": 1 \r\n} "
+							"raw": "{\r\n  \"candidato_id\": 2,\r\n  \"institucion\": \"Universidad de Chile\",\r\n  \"titulo_obtenido\": \"Ingeniero Civil\",\r\n  \"anio_ingreso\": 2018,\r\n  \"anio_egreso\": 2023\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
 						"url": {
 							"raw": "http://localhost:3000/api/antecedenteAcademico",
@@ -381,7 +430,12 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{ \r\n    \"titulo\": \"Administración en Vigilia\", \r\n    \"descripcion\": \"Desarrollador base de API para programa de ajuste y desarrollo de sueños personalizados\", \r\n    \"ubicacion\": \"Nube sectorial sur\", \r\n    \"salario\": \"6,596,559\", \r\n    \"tipo_contrato\": \"Indefinido\", \r\n    \"estado\": \"Activo\", \r\n    \"reclutador_id\": 1 \r\n} "
+							"raw": "{\r\n  \"candidato_id\": 2,\r\n  \"institucion\": \"Universidad de Chile\",\r\n  \"titulo_obtenido\": \"Ingeniero Civil\",\r\n  \"anio_ingreso\": 2018,\r\n  \"anio_egreso\": 2023\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
 						"url": {
 							"raw": "http://localhost:3000/api/antecedenteAcademico",
@@ -461,7 +515,12 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{ \r\n    \"titulo\": \"Administración en Vigilia\", \r\n    \"descripcion\": \"Desarrollador base de API para programa de ajuste y desarrollo de sueños personalizados\", \r\n    \"ubicacion\": \"Nube sectorial sur\", \r\n    \"salario\": \"6,596,559\", \r\n    \"tipo_contrato\": \"Indefinido\", \r\n    \"estado\": \"Activo\", \r\n    \"reclutador_id\": 1 \r\n} "
+							"raw": "{\r\n  \"candidato_id\": 2,\r\n  \"empresa\": \"Empresa X\",\r\n  \"cargo\": \"Analista\",\r\n  \"funciones\": \"Análisis de datos y reportes\",\r\n  \"fecha_inicio\": \"2022-01-01\",\r\n  \"fecha_termino\": \"2023-01-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
 						"url": {
 							"raw": "http://localhost:3000/api/antecedenteLaboral",
@@ -485,7 +544,12 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{ \r\n    \"titulo\": \"Administración en Vigilia\", \r\n    \"descripcion\": \"Desarrollador base de API para programa de ajuste y desarrollo de sueños personalizados\", \r\n    \"ubicacion\": \"Nube sectorial sur\", \r\n    \"salario\": \"6,596,559\", \r\n    \"tipo_contrato\": \"Indefinido\", \r\n    \"estado\": \"Activo\", \r\n    \"reclutador_id\": 1 \r\n} "
+							"raw": "{\r\n  \"candidato_id\": 2,\r\n  \"empresa\": \"Empresa X\",\r\n  \"cargo\": \"Analista\",\r\n  \"funciones\": \"Análisis de datos y reportes\",\r\n  \"fecha_inicio\": \"2022-01-01\",\r\n  \"fecha_termino\": \"2023-01-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
 						"url": {
 							"raw": "http://localhost:3000/api/antecedenteLaboral",
