@@ -71,7 +71,7 @@ PUT /api/usuarios/:id
 DELETE /api/usuarios/:email
 PUT /api/usuarios/desactivate
 
-# Body ejemplo:
+Body ejemplo:
 {
   "nombre": "Juan",
   "apellido": "Naju",
@@ -80,7 +80,7 @@ PUT /api/usuarios/desactivate
   "rol": "Reclutador"
 }
 
-# Response ejemplo:
+Response ejemplo:
 {
   "message": "Usuario creado exitosamente."
 }
@@ -93,7 +93,7 @@ PUT /api/ofertaLaboral/:id
 DELETE /api/ofertaLaboral/:id
 PUT /api/ofertaLaboral/estado/:id
 
-# Body ejemplo:
+Body ejemplo:
 {
   "titulo": "Administración Onírica",
   "descripcion": "Desarrollador base de datos...",
@@ -114,7 +114,7 @@ POST /api/antecedenteLaboral
 PUT /api/antecedenteLaboral/:id
 DELETE /api/antecedenteLaboral/:id
 
-# Body Ejemplo
+Body Ejemplo
 {
   "candidato_id": 2,
   "empresa": "Empresa X",
@@ -134,7 +134,7 @@ POST /api/antecedenteAcademico
 PUT /api/antecedenteAcademico/:id
 DELETE /api/antecedenteAcademico/:id
 
-# Body ejemplo
+Body ejemplo
 {
   "candidato_id": 2,
   "institucion": "Universidad X",
@@ -152,7 +152,7 @@ PUT /api/postulacion/:id
 DELETE /api/postulacion/:id
 PUT /api/postulacion/estado/:id
 
-# Body ejemplo
+Body ejemplo
 {
   "candidato_id": 2,
   "oferta_laboral_id": 1,
@@ -161,6 +161,9 @@ PUT /api/postulacion/estado/:id
   "comentario": "Interesado en la oferta"
 }
 
+## Colección Postman
+
+Puedes importar la colección de endpoints en Postman usando el archivo [`EV2_API.postman_collection.json`](./EV2_API.postman_collection.json).
 
 ## Conclusión
 

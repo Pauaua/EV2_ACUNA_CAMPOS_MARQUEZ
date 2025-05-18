@@ -1,0 +1,532 @@
+{
+	"info": {
+		"_postman_id": "126035b7-da29-4de0-929e-993aa89bac55",
+		"name": "BACKEND",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45058351",
+		"_collection_link": "https://paulina-7666840.postman.co/workspace/Paulina's-Workspace~773de89d-009b-488c-85fb-1536b2a30763/collection/45058351-126035b7-da29-4de0-929e-993aa89bac55?action=share&source=collection_link&creator=45058351"
+	},
+	"item": [
+		{
+			"name": "OfertaLaboral",
+			"item": [
+				{
+					"name": "Obtener Oferta Laboral",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/ofertaLaboral",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"ofertaLaboral"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Oferta Laboral",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"titulo\": \"Administración en Vigilia\", \r\n    \"descripcion\": \"Desarrollador base de API para programa de ajuste y desarrollo de sueños personalizados\", \r\n    \"ubicacion\": \"Nube sectorial sur\", \r\n    \"salario\": \"6,596,559\", \r\n    \"tipo_contrato\": \"Indefinido\", \r\n    \"estado\": \"Activo\", \r\n    \"reclutador_id\": 1 \r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/ofertaLaboral",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"ofertaLaboral"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar estado oferta laboral",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"estado\": \"Cerrada\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/antecedenteLaboral",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"antecedenteLaboral"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Oferta Laboral",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"titulo\": \"Administración en Vigilia\", \r\n    \"descripcion\": \"Desarrollador base de API para programa de ajuste y desarrollo de sueños personalizados\", \r\n    \"ubicacion\": \"Nube sectorial sur\", \r\n    \"salario\": \"6,596,559\", \r\n    \"tipo_contrato\": \"Indefinido\", \r\n    \"estado\": \"Activo\", \r\n    \"reclutador_id\": 1 \r\n} "
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/ofertaLaboral",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"ofertaLaboral"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Postulaciones",
+			"item": [
+				{
+					"name": "Obtener postulaciones",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/postulacion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"postulacion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Postulación",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/postulacion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"postulacion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar postulación",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/postulacion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"postulacion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar postulación",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"titulo\": \"Administración en Vigilia\", \r\n    \"descripcion\": \"Desarrollador base de API para programa de ajuste y desarrollo de sueños personalizados\", \r\n    \"ubicacion\": \"Nube sectorial sur\", \r\n    \"salario\": \"6,596,559\", \r\n    \"tipo_contrato\": \"Indefinido\", \r\n    \"estado\": \"Activo\", \r\n    \"reclutador_id\": 1 \r\n} "
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/postulacion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"postulacion"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "Obtener Usuarios",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"titulo\": \"Administración en Vigilia\", \r\n    \"descripcion\": \"Desarrollador base de API para programa de ajuste y desarrollo de sueños personalizados\", \r\n    \"ubicacion\": \"Nube sectorial sur\", \r\n    \"salario\": \"6,596,559\", \r\n    \"tipo_contrato\": \"Indefinido\", \r\n    \"estado\": \"Activo\", \r\n    \"reclutador_id\": 1 \r\n} "
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"titulo\": \"Administración en Vigilia\", \r\n    \"descripcion\": \"Desarrollador base de API para programa de ajuste y desarrollo de sueños personalizados\", \r\n    \"ubicacion\": \"Nube sectorial sur\", \r\n    \"salario\": \"6,596,559\", \r\n    \"tipo_contrato\": \"Indefinido\", \r\n    \"estado\": \"Activo\", \r\n    \"reclutador_id\": 1 \r\n} "
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Usuario",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"titulo\": \"Administración en Vigilia\", \r\n    \"descripcion\": \"Desarrollador base de API para programa de ajuste y desarrollo de sueños personalizados\", \r\n    \"ubicacion\": \"Nube sectorial sur\", \r\n    \"salario\": \"6,596,559\", \r\n    \"tipo_contrato\": \"Indefinido\", \r\n    \"estado\": \"Activo\", \r\n    \"reclutador_id\": 1 \r\n} "
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar usuario",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"titulo\": \"Administración en Vigilia\", \r\n    \"descripcion\": \"Desarrollador base de API para programa de ajuste y desarrollo de sueños personalizados\", \r\n    \"ubicacion\": \"Nube sectorial sur\", \r\n    \"salario\": \"6,596,559\", \r\n    \"tipo_contrato\": \"Indefinido\", \r\n    \"estado\": \"Activo\", \r\n    \"reclutador_id\": 1 \r\n} "
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Antecedentes Académicos",
+			"item": [
+				{
+					"name": "Obtener antecedentes académicos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"titulo\": \"Administración en Vigilia\", \r\n    \"descripcion\": \"Desarrollador base de API para programa de ajuste y desarrollo de sueños personalizados\", \r\n    \"ubicacion\": \"Nube sectorial sur\", \r\n    \"salario\": \"6,596,559\", \r\n    \"tipo_contrato\": \"Indefinido\", \r\n    \"estado\": \"Activo\", \r\n    \"reclutador_id\": 1 \r\n} "
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/antecedenteAcademico",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"antecedenteAcademico"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear antecedente académico",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"titulo\": \"Administración en Vigilia\", \r\n    \"descripcion\": \"Desarrollador base de API para programa de ajuste y desarrollo de sueños personalizados\", \r\n    \"ubicacion\": \"Nube sectorial sur\", \r\n    \"salario\": \"6,596,559\", \r\n    \"tipo_contrato\": \"Indefinido\", \r\n    \"estado\": \"Activo\", \r\n    \"reclutador_id\": 1 \r\n} "
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/antecedenteAcademico",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"antecedenteAcademico"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar antecedente académico",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"titulo\": \"Administración en Vigilia\", \r\n    \"descripcion\": \"Desarrollador base de API para programa de ajuste y desarrollo de sueños personalizados\", \r\n    \"ubicacion\": \"Nube sectorial sur\", \r\n    \"salario\": \"6,596,559\", \r\n    \"tipo_contrato\": \"Indefinido\", \r\n    \"estado\": \"Activo\", \r\n    \"reclutador_id\": 1 \r\n} "
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/antecedenteAcademico",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"antecedenteAcademico"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar antecedente académico",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"titulo\": \"Administración en Vigilia\", \r\n    \"descripcion\": \"Desarrollador base de API para programa de ajuste y desarrollo de sueños personalizados\", \r\n    \"ubicacion\": \"Nube sectorial sur\", \r\n    \"salario\": \"6,596,559\", \r\n    \"tipo_contrato\": \"Indefinido\", \r\n    \"estado\": \"Activo\", \r\n    \"reclutador_id\": 1 \r\n} "
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/antecedenteAcademico",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"antecedenteAcademico"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Antecedentes Laborales",
+			"item": [
+				{
+					"name": "Obtener antecedentes laborales",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"titulo\": \"Administración en Vigilia\", \r\n    \"descripcion\": \"Desarrollador base de API para programa de ajuste y desarrollo de sueños personalizados\", \r\n    \"ubicacion\": \"Nube sectorial sur\", \r\n    \"salario\": \"6,596,559\", \r\n    \"tipo_contrato\": \"Indefinido\", \r\n    \"estado\": \"Activo\", \r\n    \"reclutador_id\": 1 \r\n} "
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/antecedenteLaboral",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"antecedenteLaboral"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear antecedente laboral",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"titulo\": \"Administración en Vigilia\", \r\n    \"descripcion\": \"Desarrollador base de API para programa de ajuste y desarrollo de sueños personalizados\", \r\n    \"ubicacion\": \"Nube sectorial sur\", \r\n    \"salario\": \"6,596,559\", \r\n    \"tipo_contrato\": \"Indefinido\", \r\n    \"estado\": \"Activo\", \r\n    \"reclutador_id\": 1 \r\n} "
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/antecedenteLaboral",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"antecedenteLaboral"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar antecedente laboral",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"titulo\": \"Administración en Vigilia\", \r\n    \"descripcion\": \"Desarrollador base de API para programa de ajuste y desarrollo de sueños personalizados\", \r\n    \"ubicacion\": \"Nube sectorial sur\", \r\n    \"salario\": \"6,596,559\", \r\n    \"tipo_contrato\": \"Indefinido\", \r\n    \"estado\": \"Activo\", \r\n    \"reclutador_id\": 1 \r\n} "
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/antecedenteLaboral",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"antecedenteLaboral"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar antecedente laboral",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"titulo\": \"Administración en Vigilia\", \r\n    \"descripcion\": \"Desarrollador base de API para programa de ajuste y desarrollo de sueños personalizados\", \r\n    \"ubicacion\": \"Nube sectorial sur\", \r\n    \"salario\": \"6,596,559\", \r\n    \"tipo_contrato\": \"Indefinido\", \r\n    \"estado\": \"Activo\", \r\n    \"reclutador_id\": 1 \r\n} "
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/antecedenteLaboral",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"antecedenteLaboral"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
