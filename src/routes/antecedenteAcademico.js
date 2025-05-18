@@ -2,27 +2,25 @@ const express = require('express');
 const router = express.Router();
 const antecedenteAcademicoController = require('../controllers/antecedenteAcademicoController');
 
+// Obtener todos los antecedentes académicos
+router.get('/', antecedenteAcademicoController.getAll);
 
-// Rutas para la API de los Antecedentes Académicos
-// localhost:3000/antecedenteAcademico/
-router.get('/', (req, res, next) => {
-    antecedenteAcademicoController.getAll(req, res); // Pasar req y res directamente
-});
-router.post('/', (req, res, next) => {
-    antecedenteAcademicoController.getById(req, res); // Pasar req y res directamente
-});
+// Obtener antecedente académico por id
+router.get('/:id', antecedenteAcademicoController.getById);
 
-router.post('/create', (req, res, next) => {
-    antecedenteAcademicoController.create(req, res); // Pasar req y res directamente
-})
-router.put('/update', (req, res, next) => {
-    antecedenteAcademicoController.update(req, res); // Pasar req y res directamente
-})
-router.delete('/remove', (req, res, next) => {
-    antecedenteAcademicoController.remove(req, res); // Pasar req y res directamente
-})
-router.put('/desactivate', (req, res, next) => {
-    antecedenteAcademicoController.desactiveUser(req, res); // Pasar req y res directamente
-})
+// Obtener antecedentes académicos por candidato
+router.get('/candidato/:candidatoId', antecedenteAcademicoController.getByCandidatoId);
+
+// Obtener antecedentes académicos por candidato e institución
+router.get('/candidato/:candidatoId/institucion/:institucion', antecedenteAcademicoController.getByCandidatoIdAndInstitucion);
+
+// Crear antecedente académico
+router.post('/', antecedenteAcademicoController.create);
+
+// Actualizar antecedente académico por id
+router.put('/:id', antecedenteAcademicoController.update);
+
+// Eliminar antecedente académico por id
+router.delete('/:id', antecedenteAcademicoController.remove);
 
 module.exports = router;

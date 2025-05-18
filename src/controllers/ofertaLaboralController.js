@@ -49,8 +49,8 @@ const remove = async (req, res) => {
 }
 const getById = async (req, res) => {
     try{
-        const oferta = req.body;
-        const result = await OfertaLaboral.getById(oferta);
+        const id = req.params.id;
+        const result = await OfertaLaboral.getById(id);
         res.status(200).json(result);
     }
     catch(err){

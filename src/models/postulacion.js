@@ -13,9 +13,9 @@ const Postulacion = {
             throw err;
         }
     },
-    getById: async(postulacion) => {
+    getById: async(id) => {
         try{
-            const [rows] = await db.query("SELECT * FROM Postulacion where id = ?", [postulacion.id]);
+            const [rows] = await db.query("SELECT * FROM Postulacion where id = ?", [id]);
             console.log("Postulaciones obtenidas");
             if (rows.length === 0) {
                 return { message: "No se encontraron postulaciones." };
@@ -28,6 +28,7 @@ const Postulacion = {
     },
     create: async (postulacion) => {
         try {
+            
             const { candidato_id, oferta_laboral_id, estado_postulacion, comentario } = postulacion;
             const [result] = await db.query(
                 "INSERT INTO Postulacion (candidato_id, oferta_laboral_id, estado_postulacion, comentario) VALUES (?, ?, ?, ?)",

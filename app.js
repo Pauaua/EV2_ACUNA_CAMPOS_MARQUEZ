@@ -26,7 +26,7 @@ app.use('/api', routes);
 
 
 //middleware
-app.use((err,res)=>{
+app.use((err,res,req,next)=>{
     console.error("Error en la aplicación: ", err);
     res.status(500).json({error:"Error interno del servidor"});
 });
